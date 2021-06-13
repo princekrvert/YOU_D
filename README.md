@@ -7,11 +7,13 @@
 ![20210613_220201](https://user-images.githubusercontent.com/56459297/121815573-cce94d80-cc94-11eb-8915-6054d030a62a.jpg)
 ***
 ``` 
-git clone 
+git clone https://github.com/princekrvert/YOU_D.git
 cd YOU_D
 chmod +x *
 ./install.sh
 ```
 ***
 ###ONE LINE CMD 
-
+```
+git clone https://github.com/princekrvert/YOU_D.git;cd YOU_D;chmod +x *;./install.sh
+```
