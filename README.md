@@ -17,3 +17,11 @@ chmod +x *
 ```
 git clone https://github.com/princekrvert/YOU_D.git;cd YOU_D;chmod +x *;./install.sh
 ```
+___
+
+## Youtube channel
+
+>[Youtube channel](https://youtube.com/channel/UCiplAqC9AwtGGxXU3WQy8pw)
+## Instagram 
+> [Follow me](https://www.instagram.com/sirprincekrvert)
+
