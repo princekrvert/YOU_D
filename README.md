@@ -5,3 +5,13 @@
 ![github follower](https://img.shields.io/github/followers/princekrvert?color=%23ff0000&style=for-the-badge)
 ![Twitter Follow](https://img.shields.io/twitter/follow/princekrvert?color=%23ff0000&label=%40princekrvert&style=for-the-badge)
 ![20210613_220201](https://user-images.githubusercontent.com/56459297/121815573-cce94d80-cc94-11eb-8915-6054d030a62a.jpg)
+***
+``` 
+git clone 
+cd YOU_D
+chmod +x *
+./install.sh
+```
+***
+###ONE LINE CMD 
+
