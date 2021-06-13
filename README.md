@@ -17,7 +17,6 @@ chmod +x *
 ```
 git clone https://github.com/princekrvert/YOU_D.git;cd YOU_D;chmod +x *;./install.sh
 ```
-___
 
 ## Youtube channel
 
