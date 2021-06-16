@@ -24,4 +24,4 @@ git clone https://github.com/princekrvert/YOU_D.git;cd YOU_D;chmod +x *;./instal
 ## Instagram 
 > [Follow me](https://www.instagram.com/sirprincekrvert)
 
-[Video](https://www.instagram.com/reel/CQEAW6ZnU_v/?utm_medium=copy_link)
+[Video](https://youtu.be/uKS5Vh8KXtc)
