@@ -4,9 +4,17 @@
 #All import goes here
 import time 
 import random
+import os 
+from pytube.cli import on_progress
 import argparse
 from pytube import YouTube
 #Make a function for Progress
+#Make a function to update ...
+def repoUpdate():
+    os.system("git pull https://github.com/princekrvert/YOU_D.git > /dev/null 2>&1 & sleep 0.5 ")
+    print("\033[35;1m Updating.....")
+    os.system("clear")
+repoUpdate()
 def progBar():
     print("\033[31;1m ■", end=" ")
 #Make a function for complete 
@@ -22,7 +30,7 @@ args = parser.parse_args()
     
 #Print title of the video 
 try:
-    yt = YouTube(args.u,on_progress_callback=progBar())
+    yt = YouTube(args.u,on_progress_callback=on_progress)
     print("")
     print(yt.title)
 except VideoUnavailable:
@@ -30,8 +38,8 @@ except VideoUnavailable:
 except KeyboardInterrupt:
     print("\033[33;1m Exiting Tool")
 #Make a function for download video 
-def downVideo():
-    dv = yt.streams.get_by_itag('22')
+def downVideo(vtag):
+    dv = yt.streams.get_by_itag(vtag)
     dv.download("/storage/emulated/0/")
     comDown()
     print("\033[34;1m Video file saved into internal storage")
@@ -44,8 +52,20 @@ def downAudio():
 
 #Now process the user demand ----------
 if ( args.v == "v" or args.v == "V" ):
-    print("\033[0;1m Starting download...")
-    downVideo()
+    print("\033[0;1m Video quality...")
+    print()
+    print("\033[32;1m [01] \033[36;1m 1080p")
+    print("\033[32;1m [02] \033[36;1m 720p")
+    print("\033[32;1m [03] \033[36;1m 360p")
+    v_q = input("\033[37;1m :: ")
+    if ( v_q == "01" or v_q == "1"):
+        downVideo(137)
+    elif ( v_q == "02" or v_q == "2"):
+        downVideo(22)
+    elif ( v_q == "03" or v_q == "3"):
+        downVideo(18)
+    else:
+        print("\033[31;1m Invalid option...")
 else:
     pass
 if (args.a == "a" or args.a == "A" ):
